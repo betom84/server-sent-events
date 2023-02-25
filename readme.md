@@ -1,0 +1,1 @@
+SSE (server sent events) example using Go + plain html/javascript
