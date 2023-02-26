@@ -40,6 +40,7 @@ func main() {
 		w.Header().Set("Cache-Control", "no-cache")
 		w.Header().Set("Connection", "keep-alive")
 		w.Header().Set("Access-Control-Allow-Origin", "*")
+		flusher.Flush()
 
 		for m := range c {
 			fmt.Fprintf(w, "event: message\n")
